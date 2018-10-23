@@ -6,7 +6,9 @@ import numpy as np
 def question01(portfolios):
   # modify and then return the variable below
   answer = 0
-  
+  f= open("q1.txt","a+")
+  f.write("list_type:{}, element_type:{}, {}".format(type(portfolios), type(portfolios[0]), portfolios))
+  f.close
   #Loop from MSB only to all bits
   for i in reversed(range(16)):
       #Get relevant bits for all portfolios
