@@ -7,7 +7,7 @@ def question01(portfolios):
   # modify and then return the variable below
   answer = 0
   f= open("q1.txt","a+")
-  f.write("list_type:{}, element_type:{}, {}".format(type(portfolios), type(portfolios[0]), portfolios))
+  f.write("list_type:{}, element_type:{}, {} \n".format(type(portfolios), type(portfolios), portfolios))
   f.close
   #Loop from MSB only to all bits
   for i in reversed(range(16)):
@@ -25,3 +25,7 @@ def question01(portfolios):
               answer = candidate
               break
   return answer
+
+
+test_array = [0b1111000011110000, 0b0111000011110000, ]
+print(bin(question01(test_array)))
