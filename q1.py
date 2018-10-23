@@ -25,7 +25,3 @@ def question01(portfolios):
               answer = candidate
               break
   return answer
-
-
-test_array = [0b1111000011110000, 0b0111000011110000, ]
-print(bin(question01(test_array)))
